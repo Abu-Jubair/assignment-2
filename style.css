@@ -1,0 +1,932 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+*{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Common Button ..................... */
+.primary-button{
+    background-color: #f43e22;
+    border: none;
+    border-radius: 45px;
+    padding: 8px 20px;
+}
+
+.primary-button a{
+    color: rgba(255, 255, 255, 0.936);
+    background-color: transparent;
+    text-decoration: none; 
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.secondary-button{
+    background-color: #f43e22;
+    border: none;
+    border-radius: 45px;
+    padding: 12px 40px;
+    margin-right: 10px;
+}
+.secondary-button a{
+    color: rgba(255, 255, 255, 0.936);
+    background-color: transparent;
+    text-decoration: none; 
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.download-button{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 45px;
+    padding: 10px 38px;
+
+}
+.download-button a{
+    color: rgba(255, 255, 255, 0.936);
+    background-color: transparent;
+    text-decoration: none; 
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.join-button{
+    background-color: #f43e22;
+    border: none;
+    border-radius: 45px;
+    padding: 12px 62px;
+}
+.join-button a{
+    color: rgba(255, 255, 255, 0.936);
+    background-color: transparent;
+    text-decoration: none; 
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+    
+    .calculate-button{
+        background-color: #f43e22;
+        border: none;
+        border-radius: 45px;
+        padding: 12px 55px;
+        margin-top: 25px;
+    }
+    .calculate-button a{
+        color: rgba(255, 255, 255, 0.936);
+        background-color: transparent;
+        text-decoration: none; 
+        font-family: "Inter", sans-serif;
+        font-size: .9rem;
+        font-weight: 600;
+    }
+
+/* Common Text ................. */
+/* nav & Banner text .............. */
+.nav-icon-style{
+    color: #f43e22;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 750;
+}
+.nav-icon-text{
+    color: rgba(255, 255, 255, 0.936);
+    background-color: transparent;
+    text-decoration: none; 
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.banner-text{
+    color: #ffff;
+    font-family: "Inter", sans-serif;
+    font-size: 3.7rem;
+    font-weight: 900;
+    width: 70%;
+    margin-top: 10%;
+}
+.miama-font{
+    font-family: 'Miama', sans-serif;
+    color: #ffff;
+    font-size: 7rem;
+    font-weight: 400;
+    width: 70%;
+    margin-top: 10%;
+    line-height: 0%;
+    background-color: transparent;
+}
+.banner-number-500{
+    color: #ffff;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+.banner-number-350{
+    color: #ffff;
+    font-family: "Inter", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+/* main text ...............  */
+.point-text{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffff;
+}
+.description-text{
+    font-family: "Inter", sans-serif;
+    font-size: .7rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.618);
+}
+.heading-text{
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffff;
+}
+.table-heading-text{
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 750;
+    color: #ffff;
+}
+.table-checkbox-text{
+    font-family: "Inter", sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.618);
+}
+.trainer-name{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 750;
+    color: #ffff;
+}
+/* footer text.................. */
+.footer-icon-text{
+    color: #f43e22;
+    font-family: "Inter", sans-serif;
+    font-size: 3.3rem;
+    font-weight: 750;
+}
+.footer-heading-text{
+    font-family: "Inter", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 750;
+    color: #ffff;
+}
+.footer-point-text{
+    color: rgba(255, 255, 255, 0.618);
+    font-family: "Inter", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.footer-copyright-text{
+    color: rgba(255, 255, 255, 0.618);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 450;
+}
+/*.....Common Flex width padding margine css ............ */
+
+/* Banner Flex width padding margine css.................. */
+.banner {
+   width: 80%;
+   margin: 0 auto;
+   padding-top: 4%;
+   padding-bottom: 4%;
+   position: relative;
+}
+.nav-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+.nav-icons{
+    display: flex;
+    border: .5px solid rgba(255, 255, 255, 0.153) ;
+    border-radius: 45px;
+    align-items: center;
+    padding: 3px;
+}
+.nav-icon-text{
+    margin: auto 30px;
+}
+.banner-section{
+    display: flex;
+    justify-content: space-between;
+}
+.banner-image-section{
+    padding-right: 10px;
+}
+.banner-text-section .description-text{
+    width: 65%;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    line-height: 18px;
+}
+/* ....Video Tutorial...... */
+.video-tutorial{
+    padding: 10px 25px 22px 25px;
+    border: .5px solid rgba(255, 255, 255, 0.153) ;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 633px;;
+    top: 543px;
+    background: rgba(66, 63, 53, 0.79);
+}
+.banner-number-350{
+background-color: transparent;
+}
+.video-tutorial-text{
+    background-color: transparent;
+}
+.video-circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f43e22;
+    margin-right: 10px;
+}
+.video-tutorial-text .description-text{
+    font-size:13px;
+    font-weight: 600;
+    background: transparent;
+}
+.video-tutorial-500{
+    padding: 8px 15px 15px 17px;
+    border: .5px solid rgba(255, 255, 255, 0.153) ;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: -49px;
+    top: 264px;
+    background: rgba(66, 63, 53, 0.79);
+}
+.banner-number-500{
+background-color: transparent;
+}
+.video-tutorial-text{
+    background-color: transparent;
+}
+@media screen and (max-width: 576px) {
+    .nav-section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+      }
+    .nav-icons{
+        display: none;
+    }
+    .banner-section{
+        flex-direction: column;
+    }
+    .banner-text-section{
+        width: 20%;
+    }
+    .banner-text{
+        color: #ffff;
+        font-family: "Inter", sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        width: 250px;
+        margin-top: 10%;
+    }
+    .miama-font{
+        font-family: 'Miama', sans-serif;
+        color: #ffff;
+        font-size: 4rem;
+        font-weight: 400;
+        width: 70%;
+        margin-top: 10%;
+        line-height: 0%;
+        background-color: transparent;
+    }
+    .banner-text-section .description-text{
+        width: 220px;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        line-height: 18px;
+    }
+    .banner-button2{
+        display: flex;
+    }
+    .video-tutorial{
+        padding: 8px 10px 8px 10px;
+        border: .5px solid rgba(255, 255, 255, 0.153) ;
+        border-radius: 10px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        left: 0px;;
+        top: 686px;
+        background: rgba(66, 63, 53, 0.79);
+    }
+    .video-tutorial-500{
+        padding: 8px 15px 15px 17px;
+        border: .5px solid rgba(255, 255, 255, 0.153) ;
+        border-radius: 10px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        right: -25px;
+        top: 470px;
+        background: rgba(66, 63, 53, 0.79);
+    }
+    .secondary-button{
+        background-color: #f43e22;
+        border: none;
+        border-radius: 45px;
+        padding: 5px 67px;
+        margin-right: 10px;
+    }
+    .secondary-button a{
+        color: rgba(255, 255, 255, 0.936);
+        background-color: transparent;
+        text-decoration: none; 
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: left;
+    }
+    .download-button{
+        background-color: transparent;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 45px;
+        padding: 5px 50px;
+    
+    }
+    .download-button a{
+        color: rgba(255, 255, 255, 0.936);
+        background-color: transparent;
+        text-decoration: none; 
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+/* ..Main..Habit section CSS ......... */
+.habit-section{
+    width: 80%;
+    margin: 0 auto;
+}
+.habit-text-section{
+    width: 50%;
+    margin: 0 auto;
+}
+.habit-text-section .heading-text{
+    text-align: center;
+}
+.habit-text-section .description-text{
+    text-align: center;
+    margin-top: 10px; 
+    line-height: 18px;
+}
+.habit-images-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 100px;
+}
+.circle img{
+    width: 150px;
+    height: 150px;
+    color: black;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.habit-image{
+    text-align: center;
+    margin-top: 40px;
+}
+@media screen and (max-width: 576px) {
+    
+    .habit-text-section{
+        width: 81%;
+        margin: 0 auto;
+    }
+    .habit-text-section .heading-text{
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #ffff;
+    }
+    .habit-images-section{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 60px;
+    }
+}
+/* ..Main..Run section CSS ......... */
+.run-section{
+    padding: 2% 2% 2% 4%;
+    background: rgba(255, 255, 255, 0.153) ;
+    display: flex;
+    justify-content: space-between; 
+    border-radius: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.run-image-section img{
+ border-radius: 12px;
+}
+.run-image-section{
+ background: transparent ;
+}
+.run-text-section{
+    background: transparent;
+}
+.run-text-section  .heading-text{
+    width: 300px;
+    background: transparent;
+}
+.run-text-section  .description-text{
+    width: 360px;
+    line-height: 18px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background: transparent;
+}
+@media screen and (max-width: 576px) {
+    .run-section{
+        padding: 2% 2% 2% 4%;
+        background: rgba(255, 255, 255, 0.153) ;
+        display: flex;
+        justify-content: space-between; 
+        border-radius: 15px;
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .run-text-section  .heading-text{
+        width: 246px;
+        background: transparent;
+    }
+    .heading-text {
+        font-family: "Inter", sans-serif;
+        font-size: 1.9rem;
+        font-weight: 800;
+        color: #ffff;
+      }
+      .run-text-section .description-text {
+        width: 260px;
+        line-height: 18px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        background: transparent;
+      }
+      .join-button {
+        background-color: #f43e22;
+        border: none;
+        border-radius: 45px;
+        padding: 12px 112px;
+        margin-bottom: 30px;
+      }
+}
+/* ..Main..BMI Calculator section CSS ......... */
+
+.bmi-container{
+    background-color:rgba(255, 255, 255, 0.085) ;
+}
+.bmi-inner-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.bmi-text {
+    margin: 0 auto;
+    margin-bottom: 70px;
+    line-height: 18px;  
+    width: 40%;
+}
+.bmi-text .description-text{
+    line-height: 18px;
+    margin-top: 25px;
+
+}
+.bmi-calculator-section{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.calculator-section{
+    padding: 40px 0px 40px 40px ;
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(255, 255, 255, 0.085) ;
+}
+.calculator-chart{
+    background-color: transparent;
+}
+table{
+    background-color: rgba(255, 255, 255, 0.081);
+}
+.table-heading-text{
+    margin-bottom: 35px;
+    background-color: rgba(255, 255, 255, 0.004);
+}
+table {
+    border-collapse:collapse ;
+}
+td, th{
+    color: #ffff;
+    border: .5px solid rgba(255, 255, 255, 0.153) ;
+    padding: 12px 20px;
+    background-color:rgba(255, 255, 255, 0.085) ;
+}
+thead .point-text{
+    font-weight: 600;
+    font-size: .8rem;
+}
+.bmi-text1{
+    text-align:start;
+}
+.your-bmi{
+    background-color: rgba(255, 255, 255, 0);
+}
+.your-bmi .description-text{
+    width: 80%;
+    background-color: transparent;
+}
+.your-bmi .table-heading-text{
+    margin-bottom: 10px;
+}
+.your-bmi .description-text{
+    margin-bottom: 30px;
+    line-height: 18px;
+}
+.bmi-input-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    background-color:rgba(255, 255, 255, 0.006) ;
+    padding-right: 10px;
+
+}
+.box{
+    background-color:rgba(255, 255, 255, 0.255) ;
+    padding: 10px;
+    border-radius: 10px;
+}
+#box-5{
+    grid-column: span 2;
+}
+#select{
+    color: #ffffff;
+    background-color:transparent;
+}
+@media screen and (max-width: 576px) {
+    .bmi-calculator-section {
+        margin-top: 47px;
+        margin-bottom: 40px;
+      }
+    .bmi-text {
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 36px;
+        line-height: 18px;
+        width: 76%;
+      }
+    .heading-text {
+        font-family: "Inter", sans-serif;
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #ffff;
+      }
+    .description-text {
+        font-family: "Inter", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: rgba(255, 255, 255, 0.618);
+      }
+    .calculator-section{
+        flex-direction: column;
+    }
+    .calculator-section {
+        padding: 22px 0px 33px 4px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.085);
+      }
+      .table-heading-text {
+        font-family: "Inter", sans-serif;
+        font-size: 1.1rem;
+        font-weight: 750;
+        color: #ffff;
+      }
+      .table-heading-text {
+        margin-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.004);
+      }
+      .your-bmi{
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 20px;
+    }
+    .calculate-button {
+        background-color: #f43e22;
+        border: none;
+        border-radius: 45px;
+        padding: 12px 50px;
+      }
+      .bmi-input-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        background-color: rgba(255, 255, 255, 0.006);
+        margin-bottom: 30px;
+      }
+}
+/* ...Main.. Team CSS................  */
+.team-section{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+.team-text{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+.team-text .description-text{
+    line-height: 18px;
+}
+.team-images{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.153)  ;
+    margin-top: 4%;
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 24px;
+}
+.team-images div{
+    width: 30.8%;
+    border-radius: 15px;
+}
+.team-images img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;    
+}
+@media screen and (max-width: 576px) {
+    .team-text {
+        margin: 0 auto;
+        width: 87%;
+        text-align: center;
+      }
+      .heading-text {
+        font-family: "Inter", sans-serif;
+        font-size: 1.8  rem;
+        font-weight: 800;
+        color: #ffff;
+        margin-bottom: 10px;
+      }
+      .team-images{
+        flex-direction: column;
+    }
+    .team-images div {
+        width: 100%;
+        border-radius: 15px;
+      }
+    
+}
+/* .Unique CSS .......... */
+.unique-section{
+    width: 80%;
+    margin: 80px auto 80px auto;
+}
+.unique-section .heading-text{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.unique-container{
+    display: flex;
+    justify-content: space-between;
+    border: .5 solid rgba(255, 255, 255, 0.153);
+}
+.unique-point{
+    display: flex;
+    background: rgba(255, 255, 255, 0.048);
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all linear 0.5s;
+}
+.unique-point:hover{
+    background-color: rgba(255, 255, 255, 0.153);
+    box-shadow: 10px 30px 60px rgba(162, 169, 192, 0.15);
+    border-radius: 15px;
+    padding-top:42px ;
+    padding-bottom: 42px;
+}
+.unique-point .footer-copyright-text{
+    width: 70%;
+    display: flex;
+    justify-content:start;
+    margin-left: 20px;
+    color: #ffffffdf;
+}
+.unique-point .circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+}
+.unique-point .circle::after{
+    position: absolute;
+    top: 0px;
+    left: 12.5px;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f43e22db;
+}
+
+.unique-text{
+    width: 30%;
+    position: relative;
+}
+.unique-part2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.unique-part2 .table-heading-text{
+    font-size: 34px;
+}
+.unique-part2 .description-text{
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.unique-part2 .calculate-button{
+    background: #ffffff58;
+    transition: all linear .2s;
+    border: 1.5px solid rgb(255, 255, 255);
+}
+.unique-part2 .calculate-button:hover{
+    background: #f51d1df8;
+}
+@media screen and (max-width: 576px){
+    .unique-section {
+        width: 80%;
+        margin: 41px auto 60px auto;
+      }
+      .unique-section .heading-text {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .unique-container {
+        flex-direction: column;
+      }
+      .unique-point:hover{
+        background-color: rgba(255, 255, 255, 0.153);
+        box-shadow: 10px 30px 60px rgba(162, 169, 192, 0.15);
+        border-radius: 15px;
+        padding-top:25px ;
+        padding-bottom: 25px;
+    }
+    .unique-text {
+        width: 106%;
+        position: relative;
+        margin-top: 20px;
+      }
+      .calculate-button {
+        background-color: #f43e22;
+        border: none;
+        border-radius: 45px;
+        padding: 12px 138px;
+        margin-top: -4px;
+      }
+      .unique-part2 .description-text {
+        line-height: 21px;
+        font-size: 15px;
+        font-weight: 300;
+        margin-bottom: 44px;
+      }
+}
+
+/* ...Footer CSS.... */
+.footer{
+    background-color:rgba(255, 255, 255, 0.153) ;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    
+}
+.footer-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.footer-information{
+    display: flex;
+}
+.footer-part1{
+    background: transparent;
+    background: rgba(255, 255, 255, 0.153);
+    padding-top: 45px ;
+    /* border: .5px solid rgba(255, 255, 255, 0.153) ; */
+    width: 50%;
+}
+.footer-icon-text i{
+    background: transparent;
+}
+.footer-icon-text {
+    background: transparent;
+}
+.footer-part1 .description-text{
+    width: 65%;
+    margin-top: 20px;
+    background-color: transparent;
+    line-height: 18px;
+    
+}
+.footer-part2{
+    background: rgba(255, 255, 255, 0.153);
+    padding-top: 50px ;
+    display: flex;
+    justify-content: space-between;
+    /* border: .5px solid rgba(255, 255, 255, 0.153) ; */
+    width: 50%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.get-started{
+    background: transparent;
+}
+.footer-heading-text{
+    background-color: transparent;
+    margin-bottom: 27.5px;
+}
+.footer-point-text{
+    background-color: rgba(255, 255, 255, 0.153);
+    line-height: 35px;
+}
+hr{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+.footer-copyright-text{
+    text-align: center;
+    background-color: transparent;
+    background: transparent;
+}
+.copy-right-div{
+    background-color: rgba(255, 255, 255, 0.153);
+    padding: 30px;
+}
+@media screen and (max-width: 576px) {
+    .footer{
+        background-color:rgba(255, 255, 255, 0.153) ;
+        margin-top: 255px;
+        margin-bottom: 30px; 
+    }
+    .footer-information {
+        flex-direction: column;
+        background-color:rgba(255, 255, 255, 0.153) ;
+      }
+    .footer-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer-part1{
+        background: transparent;
+        padding-top: 30px ;
+        width: 134%;
+    }
+    .footer-part2{
+        background: transparent;
+        padding-top: 20px ;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 0px;
+    }
+    .footer-heading-text {
+        background-color: transparent;
+        margin-bottom: 8.5px;
+        margin-top: 17px;
+      } 
+    .footer-point-text {
+        background-color: rgba(255, 255, 255, 0.153);
+        line-height: 30px;
+      }
+    hr {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        background-color: transparent;
+      }
+
+}
